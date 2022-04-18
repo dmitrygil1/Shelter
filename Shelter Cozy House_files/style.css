@@ -742,22 +742,6 @@ a {
 #help {
   padding: 20px 0px;
 }
-
-.donation-image{
-  transform: scale(70%);
-}
-.donation {
-  padding-top: 40px ;
-  padding-bottom: 5px;
-  max-width: max-content;
-}
-.donation-inner {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  gap: 20px;
-}
 .footer {
   height: 610px;
   overflow: hidden;
@@ -783,4 +767,23 @@ a {
 }
 .footer-column {
   padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .donation-image{
+    transform: scale(70%);
+  }
+  .donation {
+    padding-top: 40px ;
+    padding-bottom: 5px;
+    max-width: max-content;
+    margin: 0 auto;
+  }
+  .donation-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 20px;
+  }
 }
